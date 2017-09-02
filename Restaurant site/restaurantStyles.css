@@ -45,6 +45,35 @@ Background-color:white;}
 
 body{
 background-color:gainsboro;}
+a:link {
+
+
+text-decoration:none;}
+
+a:visited{
+color:yellow;}
+
+a:hover{
+
+font-weight: bold;
+text-decoration: underline;
+}
+a:active{
+text-decoration:none;
+color:yellow;}
+
+.beverage{
+margin-left:auto; 
+    margin-right:auto;
+	border-style:solid; 
+border-color:black;}
+
+
+
+
+
+
+
 
 
 
