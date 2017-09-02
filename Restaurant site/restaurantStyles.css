@@ -23,7 +23,16 @@ label{
     width: 400px;
     text-align: right;
 }
-
+#history{
+color: black;
+border-style:solid; 
+border-color:black;
+text-align:center; margin-right:20%;
+margin-left:20%;
+text-indent:10%; 
+text-align:justify;
+font-family:fantasy;
+font-weight:bold;}
 
 
 

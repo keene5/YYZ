@@ -1,5 +1,7 @@
-body{
-background-color: lightblue;}
+body
+
+{
+} 
 
 table {display: table;   /* Allow the centering to work */
 	margin: 0 auto;}
@@ -15,4 +17,7 @@ text-align: center;
 }
 li{
 display: inline-block;}
+
+#rush{
+height: 100px;}
 
