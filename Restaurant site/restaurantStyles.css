@@ -2,6 +2,8 @@ footer {
 text-align: center;
 font-weight: bold;
 font-style: italic;
+Background-color:white;
+ black;border-style:solid;
 
 }
 
@@ -33,6 +35,16 @@ text-indent:10%;
 text-align:justify;
 font-family:fantasy;
 font-weight:bold;}
+
+thead{
+font-size: 25px}
+table{
+}
+#ContentArea{
+Background-color:white;}
+
+body{
+background-color:gainsboro;}
 
 
 
