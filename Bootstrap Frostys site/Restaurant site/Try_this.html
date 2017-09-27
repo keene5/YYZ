@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Frosty's Donuts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="text/JavaScript" src="Validations3.js"></script>
+
+       
+
+        <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+		
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+        
+        <script src="jquery-3.2.1.js"></script>
+        <script src="bootstrap.js"></script>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        
+        </script>
+        <script>
+        
+        
+        function validateName() {
+            var x = document.forms["contactInfo"]["fname"].value;
+            if (x === "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+
+
+     
+
+       
+		
+		
+		<script src="bootstrap.js"></script>
+     
+        
+    </head>
+	
+  
+
+
+
+
+  <body>
+  
+ 
+
+   
+
+
+<--This is a basic form validation with no frills Java script funtion is contained in the HTML doc-->
+
+
+        <form name="contactInfo" onsubmit="return validateName();">
+          First Name: <input type = "text" name = "fname">
+          <Input type="submit" value="submit">
+          
+  </form>
+
+
+  <--This is  the same basic form validation with no frills Java script function is contained in its own file-->
+    
+    
+    <form name="contactInfo" onsubmit="return validateName3();">
+            Last Name: <input type = "text" name = "Lname">
+            <Input type="submit" value="submit">
+            
+    </form>
+
+
+        
+								 
+								 
+				
+    </body>
+</html>

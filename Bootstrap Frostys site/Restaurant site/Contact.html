@@ -15,7 +15,8 @@ and open the template in the editor.
         <title>Frosty's Donuts</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+
+        <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
 		
 		<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	
@@ -24,14 +25,36 @@ and open the template in the editor.
 		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
 
 
-		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
-		</script>
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+        <script src="jquery-3.2.1.js"></script>
+       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+       
 		
-		<script src="jquery-3.2.1.js"></script>
-		<script src="bootstrap.js"></script>
+		
+        <script src="bootstrap.js"></script>
+        
+       
 
-		
+<script type="text/JavaScript" src="Validations.js"></script>
+                
+                
+<!--<script>  
+              function validateName() {
+                 var firstName = document.forms ["contactInfo"]["firstName"].value;
+           
+                if (firstName === "") {
+        
+               
+                alert("First name must be filled in with a number.");
+               
+                return false;
+           
+            }}
+            </script>-->
+     
+        
     </head>
 	
   
@@ -45,15 +68,15 @@ and open the template in the editor.
   
   <div class='row'>
   
-  <div class= 'col-sm-3'></div>
+  <div class= 'col-sm-4'></div>
   
    <div class= 'col-sm-5' nav nav-tabs'>
    
    <UL class='nav nav-pills'>
             
-   <li>  <a class='btn glyphicon glyphicon-home' href="index.html">Home</a></li>
-	<li> <a class='btn'  href="Menu.html">Menu</a></li>
-    <li> <a  class='btn' href="Contact.html">Contact</a> </li></ul>
+    <li>  <a class='btn' href="index.html">Home</a></li>
+	<li>  <a class='btn'  href="Menu.html">Menu</a></li>
+    <li>  <a class='btn' href="Contact.html">Contact</a> </li></ul>
 	</div>
 	<div class= 'col-sm-4'></div>
 	</div>
@@ -81,29 +104,85 @@ and open the template in the editor.
     <div class='row'>
    <div class= 'col-sm-4'></div>
    <div class= 'col-sm-6 center-block'> 
-   <form action="fakePage.html" method="POST">
+
+    <!-- normally you would add the 'action="fakePage.html" method="POST"' to the form so submit would know where to send the data'-->
+   <!--<form name = "contactInfo" onSubmit = "return validateName();"Class = form-Inline>
    
-   <BR>
-         
-            <label>First Name: </label>
-                <input type="text" name="myTextInput" >
+   
+         <div class = "form-group">
+            <label for=firstName> First Name: </label>
+            <input type="text" name= "firstName" class = "form-control" id="firstName" >
+        </div>
 				
-				<br>
-				<br>
+			
+				
           
-            <label>Last Name:</label>
-                <input   type="text" name="myTextInput">
-             	<br>
-				<br>
+        <div class = "form-group">
+            <label for=lastName> Last Name: </label>
+                <input type="text"name= "lastName" class = "form-control" id="lastName" >
+        </div>
+
+        <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+
+        </form>-->
+
+
+
+
+
+
+
+        <form name="contactInfo" onsubmit="return validateName();" 
+        class="form-inline">
+          <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName">
+          </div>
+          <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName">
+          </div>           
+          <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+          
+  </form>
+
+
+
+  <!--<form name="numberFun" onsubmit="return validateItems();" 
+  onreset="resetForm();" class="form-inline">
+    <div class="form-group">
+        <label for="num1">Num1</label>
+        <input type="number" class="form-control" id="num1">
+    </div>
+    <div class="form-group">
+        <label for="num2">Num2</label>
+        <input type="number" class="form-control" id="num2">
+    </div>           
+    <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+    <button type="reset" id="resetButton" class="btn">Reset</button>
+</form>-->
+
+
+
+
+
+
+
+
+
+
+        
              
-            <label>Phone:</label>
+           
+       <form>
+        <label>Phone:</label>
                 <input type="text" name="myTextInput">
              
              	<br>
 				<br>
              
             
-     </form>
+    
 		
 		   <div class= 'col-sm-4'></div></div>
         
@@ -119,7 +198,7 @@ and open the template in the editor.
       <br>
 	  
 		
-		<form>
+		
                         
          Reason:
          <select name = "dropdown">
@@ -128,7 +207,7 @@ and open the template in the editor.
             <option value = "Coffee">Just wanted to say Hi</option>
             
          </select>
-      </form>
+        </div>
 	  
 	   <div class= 'col-sm-6 center-block'> </div></div>
              
@@ -142,14 +221,14 @@ and open the template in the editor.
 			   <div class='row'>
 			   <div class= 'col-sm-4'></div>
    <div class= 'col-sm-6 center-block'> 
-              <form>
+             
          Description : <br />
         
       
          <textarea rows = "5" cols = "50" name = "Additional Information">
            
          </textarea>
-      </form>
+     
              
              <br>
          
@@ -158,7 +237,7 @@ and open the template in the editor.
           <br>
          
          
-            <form action="fakePage.html" method="POST">
+            
             
                Have you been to Frostys?:
                      <input type= "radio" name="check" value="Name1" />Yes
@@ -168,7 +247,7 @@ and open the template in the editor.
 			 <br/>
 			 <br/>
                          
-                                 </form>
+                                
 								 
 								 <div class= 'col-sm-4'></div>
 								 
@@ -179,7 +258,7 @@ and open the template in the editor.
                <div class='row'>
              	   <div class= 'col-sm-4'></div>
    <div class= 'col-sm-6 center-block'> 
-             <form action="fakePage.html" method="POST">
+             
             
                Best days to contact you:
                      <input type="checkbox" name="check" value="Name1" />Mo
@@ -195,7 +274,7 @@ and open the template in the editor.
 			 
 			 
                          
-                                 </form>
+                               
 
         
         <div class= 'col-sm-4'></div>
@@ -215,7 +294,7 @@ and open the template in the editor.
            <div class= 'col-sm-4'></div>
    <div class= 'col-sm-6 center-block'> 
        
-                 <form action="fakePage.html" method="POST"><br/>
+               <!--  <form action="fakePage.html" method="POST"><br/>-->
                      <input type="submit" value="Send Request"/> <br/>
                       </form>
 					  
